@@ -1,25 +1,35 @@
-html {font-size: 13px;}
+html {
+    font-size: 13px;
+    font-family:"Mooli", Tahoma, sans-serif;
+}
+
 .card {
     display: flex;
     align-items: center;
    flex-direction: column;  
-   background-color: ff8b07;
+   background-color: rgb(223, 178, 128);
    width: 28%;
    align-content: space-around;
    margin-bottom: 1.5rem;
    padding: 3px;
-   box-shadow: 10px 7px 10px black;
+   box-shadow: 10px 7px 10px rgb(0, 0, 0);
 }
 .header {
     font-size: 2rem;
 }
 .image {
     width: 50%;
-    border: 5px black solid;
+    border: 5px rgb(0, 0, 0) solid;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
-   background-color: rgb(240, 248, 255);
+    background: linear-gradient(90deg, #85797c, #7D6986, #000000);
+    background-size: 300% 300%;
+    animation: gradient 5s alternate infinite;
    justify-content: space-around;
+}
+@keyframes gradient {
+  0% {background-position: 0%;}
+100% {background-position: 100%;}
 }
