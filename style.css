@@ -26,6 +26,7 @@ html {
    margin-bottom: 1.5rem;
    padding: 3px;
    box-shadow: 10px 7px 10px rgb(0, 0, 0);
+   justify-content: space-around;
 }
 .header {
     font-size: 2rem;
