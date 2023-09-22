@@ -23,7 +23,7 @@ html {
     align-items: center;
    flex-direction: column;  
    background-color: rgb(170, 152, 131);
-   width: 28%;
+   width: 23%;
    margin-bottom: 1.5rem;
    padding: 3px;
    box-shadow: 10px 7px 10px rgb(0, 0, 0);
@@ -41,3 +41,18 @@ html {
     flex-wrap: wrap;
    justify-content: space-around;
 }
+.image:hover {
+    transition: 1.5s;
+    transform: scale(1.2) rotate(5deg);
+}
+.title-text:hover {
+    transition: 1.25s;
+    font-size: 250%;
+}
+.card h2:hover {
+    transition: 1s;
+    color:transparent;
+}
+.card:hover {
+    transition: 1.5s;
+    transform:translateY(-1000px);}
