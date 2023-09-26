@@ -16,7 +16,9 @@ html {
   margin-bottom: 20px;
    box-shadow: 10px 7px 10px rgb(0, 0, 0);
    justify-content: space-around;
-
+}
+.title-text {
+    transition: 1.25s;
 }
 .card {
     display: flex;
@@ -28,13 +30,16 @@ html {
    padding: 3px;
    box-shadow: 10px 7px 10px rgb(0, 0, 0);
    justify-content: space-around;
+   transition: all .3s;
 }
 .header {
     font-size: 2rem;
+    transition: 1s;
 }
 .image {
     width: 50%;
     border: 5px rgb(0, 0, 0) solid;
+    transition: .3s;
 }
 .container {
     display: flex;
@@ -42,17 +47,21 @@ html {
    justify-content: space-around;
 }
 .image:hover {
-    transition: 1.5s;
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2);
 }
 .title-text:hover {
-    transition: 1.25s;
     font-size: 250%;
 }
 .card h2:hover {
-    transition: 1s;
-    color:transparent;
+    color: transparent;
+}
+.card h2:hover:before {
+    content: "Add to Cart";
+    color: #000000;
+}
+.header:hover {
+    transform: translateY(10px);
 }
 .card:hover {
-    transition: 1.5s;
-    transform:translateY(-1000px);}
+    transform: translateY(-5px);
+}
