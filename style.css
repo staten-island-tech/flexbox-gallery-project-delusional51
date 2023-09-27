@@ -2,6 +2,7 @@ html {
     font-size: 13px;
     font-family:"Mooli", Tahoma, sans-serif;
     background: linear-gradient(90deg, #85797c, #7D6986, #000000);
+    overflow: auto;
 }
 
 .title {
@@ -20,6 +21,7 @@ html {
 .title-text {
     transition: 1.25s;
 }
+
 .card {
     display: flex;
     align-items: center;
@@ -52,16 +54,28 @@ html {
 .title-text:hover {
     font-size: 250%;
 }
+.title {
+    animation: 2.1s alternate slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 25%;
+        width: 300%;
+        overflow: hidden;
+      }
+      to {
+        margin-left:25%;
+        margin-right:25%;
+        width: 50%;
+      }
+}
 .card h2:hover {
     color: transparent;
-}
-.card h2:hover:before {
-    content: "Add to Cart";
-    color: #000000;
+    transition: .3s;
 }
 .header:hover {
     transform: translateY(10px);
 }
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
 }
