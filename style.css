@@ -36,7 +36,7 @@ html {
 
 @media screen and (max-width: 1000px) {
     .card{ width: 45%;}
-    .title{ width: 70%; font-size: 1.25rem;}
+    .title{ width: 70%; font-size: 1.4rem;}
 }
 @media screen and (max-width: 550px) {
   .card{ width: 95%;}
